@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="module.js"></script> 
+    <script src="servicectrl.js"></script>
+ 
+</head>
+<body ng-app="myapp" ng-controller="servicectrl">
+ 
+    <div> Service example</div>
+ 
+    <input type="number" id="length" ng-model="length" />
+    <input type="number" id="width" ng-model="width" />
+    <input type="button" value="CalculateArea" ng-click="Area();" />
+ 
+    <p ng-bind="result"></p>
+ 
+</body>
+</html>
+ 
